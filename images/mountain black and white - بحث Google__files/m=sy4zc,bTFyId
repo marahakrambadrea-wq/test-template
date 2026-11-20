@@ -1,0 +1,11 @@
+loaded_h_0(function(_){var window=this;
+_.ICq=_.x("bTFyId",[_.Dr]);
+_.v("bTFyId");
+_.JCq=class extends _.Os{static Sa(){return{service:{Mc:_.av}}}constructor(a){super(a.Ma);this.Aa="";this.Tb=a.service.Mc}async expand(a=""){var b=(0,_.Yf)(),c=b();b=b(1);try{let d=this.getRoot().Zd(`div[data-key="container${a}"]`),e=this.getRoot().Zd(`div[data-key="carousel${a}"]`),f=a===""?"":`,[data-key="${a}"]`,g=this.getRoot().Zd(`[role="button"]${f}`),h=this.getRoot().Zd(`span[data-key="chevron${a}"]`);g?.Wa()?.setAttribute("selected","selected");g?.Wa()?.setAttribute("aria-expanded","true");
+h?.Wa()?.setAttribute("style","rotate:180deg;");b(await c((0,_.Jo)(new _.z9c({container:d.Wa(),content:e.Wa()}))));this.Aa=a;let k=_.di(g.el(),3,0),l=this.Tb.ka();_.gq(l,k);l.Zz(e.el(),1);l.log(!0)}finally{c()}}async collapse(a=""){var b=(0,_.Yf)(),c=b();b=b(1);try{let d=this.getRoot().Zd(`div[data-key="container${a}"]`),e=this.getRoot().Zd(`div[data-key="carousel${a}"]`),f=a===""?"":`,[data-key="${a}"]`,g=this.getRoot().Zd(`[role="button"]${f}`),h=this.getRoot().Zd(`span[data-key="chevron${a}"]`);
+g?.Wa()?.removeAttribute("selected");g?.Wa()?.setAttribute("aria-expanded","false");h?.Wa()?.setAttribute("style","rotate:0deg;");b(await c((0,_.Jo)(new _.y9c({container:d.Wa(),content:e.Wa()}))));this.Aa="";let k=_.di(g.el(),3,1),l=this.Tb.ka();_.gq(l,k);l.Zz(e.el(),2);l.log(!0)}finally{c()}}async Ba(a){var b=(0,_.Yf)(),c=b();b=b(1);try{let d=a.mb.el().getAttribute("data-key")??"",e=this.getRoot().Zd(`div[data-key="carousel${d}"]`);this.Aa!==""&&this.Aa!==d&&b(await c(this.collapse(this.Aa)));e.getStyle("display")===
+"none"?b(await c(this.expand(d))):b(await c(this.collapse(d)))}finally{c()}}};_.JCq.prototype.$wa$f2nbFb=function(){return this.Ba};_.Qs(_.ICq,_.JCq);
+
+_.w();
+});
+// Google Inc.
